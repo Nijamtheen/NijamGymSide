@@ -1,0 +1,904 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="ABOSS">
+    <meta name="publisher" content="ABOSS">
+    <title>NIJam-FITNESS</title>
+
+    <link rel="preload" href="./assets/icon/icon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./assets/fonts/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind_config.js"></script>
+  
+</head>
+
+<body class="font-['Poppins']">
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| NAVBAR SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<header class="fixed w-full  z-[10] py-[20px] ">
+	<div class="container mx-auto md:px-[30px] px-0">
+		<div class="flex items-center justify-between text-[#09c0f6]">
+			<a href="javascript:;" class=" llg:text-[30px] text-[23px] font-[600] uppercase" title="logo"></a>
+		<div class="md:flex items-center justify-center llg:text-[20px] text-[16px] font-[600] gap-[20px] hidden transition-all ease-in-out ">
+			<a href="#home" class="hover:text-white duration-700"  title="menu">HOME</a>
+			<a href="#about" class="hover:text-white duration-700" title="menu">ABOUT</a>
+			<a href="#schedule" class="hover:text-white duration-700" title="menu">SCHEDULE</a>
+			<a href="#blog" class="hover:text-white duration-700" title="menu">BLOG</a>
+			<a href="#contact" class="hover:text-white duration-700" title="menu">CONTACTS</a>
+		</div>
+		
+		<a href="javascript:;" title="menu" class="md:hidden  flex cursor-pointer text-[30px]">
+                <i class="bi bi-list" id="menuicon"></i>
+            </a>
+		</div>
+            
+       
+	</div>
+</header>
+<!-- MOBILE NAV START-->
+	<div class="md:hidden fixed w-[100%]  h-screen bg-[#2d2567] flex items-center justify-center transition-all ease-in-out duration-500 z-[3] top-0 right-[-100%] text-center"
+            id="section">
+        <div class="flex flex-col gap-5  text-[#09c0f6] uppercase">
+           	<a href="javascript:;" class="hover:text-white duration-700"  title="menu">HOME</a>
+			<a href="javascript:;" class="hover:text-white duration-700"  title="menu">ABOUT</a>
+			<a href="javascript:;" class="hover:text-white duration-700"  title="menu">SCHEDULE</a>
+			<a href="javascript:;" class="hover:text-white duration-700"  title="menu">BLOG</a>
+			<a href="javascript:;" class="hover:text-white duration-700"  title="menu">CONTACTS</a>
+        </div>          
+        </div>
+<!-- MOBILE NAV END -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| NAVBAR SECTION END ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| MAIN BANNER SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<section class="overflow-hidden m-0 relative" id='home  section'>
+	<div class="flex slider transition-all duration-500	ease-in-out">
+		<div class="slide relative bg-hero-banner bg-cover bg-top w-full h-screen flex-[0_0_100%] transition-all flex items-center justify-center ease-in-out">
+			<div class="text-center transition-all 	ease-in-out">
+        		<div class="md:text-[24px] text-[16px] text-white leading-[30px] uppercase ">personal Training Services</div>
+        		<div class="lg:text-[94px] llg:text-[77px] md:text-[49px]  text-[24px] text-white uppercase font-[600] mb-[20px]">Challenge <span class="text-[#09c0f6]">Yourself</span></div>
+        		<a href="javascript:;" class="text-[14px] border-2 border-solid  transition-all border-[#09c0f6] text-white font-[500] p-[8px] duration-500 hover:bg-[#09c0f6] uppercase">Get Started Now</a>
+        	</div>
+		</div>
+			<div class="slide relative bg-hero-banner1 bg-cover bg-top w-full h-screen flex-[0_0_100%] transition-all flex items-center justify-center">
+			<div class="text-center transition-all 	ease-in-out">
+        		<div class="md:text-[24px] text-[16px] text-white leading-[30px] uppercase ">personal Training Services</div>
+        		<div class="lg:text-[94px] llg:text-[77px] md:text-[49px]  text-[24px] text-white uppercase font-[600] mb-[20px]">We are the <span class="text-[#09c0f6]">BodyFit</span> Gym</div>
+        		<a href="javascript:;" class="text-[14px] border-2 border-solid  transition-all border-[#09c0f6] text-white font-[500] p-[8px] duration-500 hover:bg-[#09c0f6] uppercase">Get Started Now</a>
+        	</div>
+		</div>
+			<div class="slide relative bg-hero-banner2 bg-cover bg-top w-full h-screen flex-[0_0_100%] transition-all flex items-center justify-center">
+				<div class="text-center transition-all 	ease-in-out">
+        		<div class="md:text-[24px] text-[16px] text-white leading-[30px] uppercase ">personal Training Services</div>
+        		<div class="lg:text-[94px] llg:text-[77px] md:text-[49px]  text-[24px] text-white uppercase font-[600] mb-[20px]">Make it <span class="text-[#09c0f6]">Shape</span></div>
+        		<a href="javascript:;" class="text-[14px] border-2 border-solid  transition-all border-[#09c0f6] text-white font-[500] p-[8px] duration-500 hover:bg-[#09c0f6] uppercase">Get Started Now</a>
+        	</div>
+		</div>
+	</div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| MAIN BANNER SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| OUR ABOUT SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section id="about section">
+	<div class="container mx-auto md:pt-[80px] pt-[50px] md:px-[30px] px-0" >
+			<div class="flex flex-col items-center justify-center">
+			<div class="md:text-[36px] text-[32px] md:mb-[20px] mb-[16px] relative before:absolute before:border-b-4 before:w-[50%] before:border-[#2d2567] before:bottom-0 before:translate-x-[50%] font-[500] pb-[20px] text-black">Our <span class="text-[#09c0f6] uppercase">About</span></div>
+			<p class="text-[16px] text-black font-[Roboto] text-center">Our fitness experts can help you discover new training techniques.</p>
+		</div>
+		
+		<div class="flex flex-wrap lg:gap-[70px] gap-[30px] md:mt-[30px] mt-[20px]">
+			<div class="llg:w-[calc(50%_-_35px)] w-full bg-cover bg-center bg-about-banner llg:h-auto md:h-[400px] h-[200px]">
+			
+		</div>
+		<div class="llg:w-[calc(50%_-_35px)] w-full">
+			<div class="md:text-[36px] text-[25px] font-[600] border-l-[3px] border-solid border-[#09c0f6] pl-[10px]">
+				Wellcome to <span class="text-[#09c0f6] uppercase">start FIt</span>
+			</div>
+			<p class="llg:text-[20px] text-[17px] font-[600] lg:my-[30px] my-[20px]">
+				Our dedicated start FIt areas and fitness experts can help you discover new training techniques and exercises that offer a dynamic and efficient full-body workout.
+			</p>
+			<p class="text-[#6e6e6e]">
+				Our fitness experts can help you discover new training techniques. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+			</p>
+		</div>
+		</div>
+		
+		
+	</div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| OUR ABOUT SECTION END ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| OUR COACHES SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section>
+	<div class="container mx-auto md:pt-[80px] pt-[50px] md:px-[30px] px-0">
+		<div class="flex flex-col items-center justify-center">
+			<div class="md:text-[36px] text-[32px] md:mb-[20px] mb-[16px] relative before:absolute before:border-b-4 before:w-[50%] before:border-[#2d2567] before:bottom-0 before:translate-x-[50%] font-[500] pb-[20px] text-black">Our <span class="text-[#09c0f6]"> COACHES</span></div>
+		</div>
+		<div class="flex md:mt-[30px] mt-[20px] md:gap-[30px] gap-[20px] flex-wrap items-center justify-center">
+			<div class="lg:w-[calc(25%_-_22.5px)] llg:w-[calc(33.33%_-_20px)]  md:w-[calc(50%_-_15px)] w-full  rounded-[10px] overflow-hidden">
+				<div class="bg-coach-banner3 bg-center w-full md:h-[400px] h-[350px] bg-cover relative overflow-hidden group transition-all	 ease-in-out">
+					<div class="absolute w-full h-full p-[30px] flex flex-col justify-center items-center bg-[#2d2567] -translate-y-[-100%] duration-1000 group-hover:-translate-y-[0%]">
+						<div class="text-[#09c0f6] text-[18px] font-[600]">
+							NICOLAS THOMSON
+						</div>
+						<div class="text-[#fff] text-[16px] font-[500]">
+							GYM / RUNNING / CROSSFIT
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="lg:w-[calc(25%_-_22.5px)] llg:w-[calc(33.33%_-_20px)]  md:w-[calc(50%_-_15px)] w-full  rounded-[10px]  overflow-hidden">
+				<div class="bg-coach-banner2 bg-center w-full md:h-[400px] h-[350px] bg-cover relative overflow-hidden group transition-all	 ease-in-out">
+					<div class="absolute w-full h-full p-[30px] flex flex-col justify-center items-center bg-[#2d2567] -translate-y-[-100%] duration-1000 group-hover:-translate-y-[0%]">
+						<div class="text-[#09c0f6] text-[18px] font-[600]">
+							NICOLAS THOMSON
+						</div>
+						<div class="text-[#fff] text-[16px] font-[500]">
+							GYM / RUNNING / CROSSFIT
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="lg:w-[calc(25%_-_22.5px)] llg:w-[calc(33.33%_-_20px)]  md:w-[calc(50%_-_15px)] w-full  rounded-[10px]  overflow-hidden">
+				<div class="bg-coach-banner1 bg-center w-full md:h-[400px] h-[350px] bg-cover relative overflow-hidden group transition-all	 ease-in-out">
+					<div class="absolute w-full h-full p-[30px] flex flex-col justify-center items-center bg-[#2d2567] -translate-y-[-100%] duration-1000 group-hover:-translate-y-[0%]">
+						<div class="text-[#09c0f6] text-[18px] font-[600]">
+							NICOLAS THOMSON
+						</div>
+						<div class="text-[#fff] text-[16px] font-[500]">
+							GYM / RUNNING / CROSSFIT
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="lg:w-[calc(25%_-_22.5px)] llg:w-[calc(33.33%_-_20px)]  md:w-[calc(50%_-_15px)] w-full  rounded-[10px]  overflow-hidden">
+				<div class="bg-coach-banner3 bg-center w-full md:h-[400px] h-[350px] bg-cover relative overflow-hidden group transition-all	 ease-in-out">
+					<div class="absolute w-full h-full p-[30px] flex flex-col justify-center items-center bg-[#2d2567] -translate-y-[-100%] duration-1000 group-hover:-translate-y-[0%]">
+						<div class="text-[#09c0f6] text-[18px] font-[600]">
+							NICOLAS THOMSON
+						</div>
+						<div class="text-[#fff] text-[16px] font-[500]">
+							GYM / RUNNING / CROSSFIT
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| OUR COACHES SECTION END ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| OUR SCHEDULE SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section  id="schedule section">
+	<div class="container mx-auto md:pt-[80px] pt-[50px] md:px-[30px] px-0">
+			<div class="flex flex-col items-center justify-center">
+			<div class="md:text-[36px] text-[32px] md:mb-[20px] mb-[16px] relative before:absolute before:border-b-4 before:w-[50%] before:border-[#2d2567] before:bottom-0 before:translate-x-[50%] font-[500] pb-[20px] text-black">Our <span class="text-[#09c0f6]">SCHEDULE</span></div>
+		</div>
+		<div class="flex flex-wrap items-center justify-center gap-[30px] md:mt-[30px] mt-[20px]">
+			<div class="llg:w-[calc(33.333%_-_20px)] md:w-[calc(50%_-_15px)] w-full text-center shadow-2xl p-[20px] border-[#09c0f6] border-solid border-[2px] rounded-[20px]">
+				<div class="text-[#2d2567] text-[20px] font-[600]">
+					MONDAY
+				</div>
+				<div class="flex items-center justify-center gap-[20px] mt-[20px] flex-wrap">
+					<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						GYM
+					</div>
+					<div class="text-[16px]">
+					10.00 - 14.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						CARDIO
+					</div>
+					<div>
+					16.00 - 17.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						BOX
+					</div>
+					<div>
+					18.00 - 20.00
+					</div>
+				</div>
+				</div>
+				<div class="text-black text-[20px] font-[600] mt-[20px]">
+					John Smith
+				</div>
+				
+			</div>
+			<div class="llg:w-[calc(33.333%_-_20px)] md:w-[calc(50%_-_15px)] w-full text-center shadow-2xl p-[20px] border-[#09c0f6] border-solid border-[2px] rounded-[20px]">
+				<div class="text-[#2d2567] text-[20px] font-[600]">
+					TUESDAY
+				</div>
+				<div class="flex items-center justify-center gap-[20px] mt-[20px] flex-wrap">
+					<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						RUNNING
+					</div>
+					<div>
+					11.00 - 14.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						CARDIO
+					</div>
+					<div>
+					18.00 - 19.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						BOX
+					</div>
+					<div>
+					19.00 - 20.00
+					</div>
+				</div>
+				</div>
+				<div class="text-black text-[20px] font-[600] mt-[20px]">
+					John Smith
+				</div>
+				
+			</div>
+			<div class="llg:w-[calc(33.333%_-_20px)] md:w-[calc(50%_-_15px)] w-full text-center shadow-2xl p-[20px] border-[#09c0f6] border-solid border-[2px] rounded-[20px]">
+				<div class="text-[#2d2567] text-[20px] font-[600]">
+					WEDNESDAY
+				</div>
+				<div class="flex items-center justify-center gap-[20px] mt-[20px] flex-wrap ">
+					<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						YOGO
+					</div>
+					<div>
+					10.00 - 14.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						GYM
+					</div>
+					<div>
+					18.00 - 19.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						BODY
+					</div>
+					<div>
+					19.00 - 20.00
+					</div>
+				</div>
+				</div>
+				<div class="text-black text-[20px] font-[600] mt-[20px]">
+					John Smith
+				</div>
+				
+			</div>
+			<div class="llg:w-[calc(33.333%_-_20px)] md:w-[calc(50%_-_15px)] w-full text-center shadow-2xl p-[20px] border-[#09c0f6] border-solid border-[2px] rounded-[20px]">
+				<div class="text-[#2d2567] text-[20px] font-[600]">
+					THURSDAY
+				</div>
+				<div class="flex items-center justify-center gap-[20px] mt-[20px] flex-wrap">
+					<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						BOX
+					</div>
+					<div>
+					10.00 - 14.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						YOGA
+					</div>
+					<div>
+					18.00 - 19.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						CROSSFIT
+					</div>
+					<div>
+					19.00 - 20.00
+					</div>
+				</div>
+				</div>
+				<div class="text-black text-[20px] font-[600] mt-[20px]">
+					John Smith
+				</div>
+				
+			</div>
+			<div class="llg:w-[calc(33.333%_-_20px)] md:w-[calc(50%_-_15px)] w-full text-center shadow-2xl p-[20px] border-[#09c0f6] border-solid border-[2px] rounded-[20px]">
+				<div class="text-[#2d2567] text-[20px] font-[600]">
+					FRIDAY
+				</div>
+				<div class="flex items-center justify-center gap-[20px] mt-[20px] flex-wrap">
+					<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						BODY
+					</div>
+					<div>
+					10.00 - 14.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						YOGA
+					</div>
+					<div>
+					18.00 - 19.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						CARDIO
+					</div>
+					<div>
+					19.00 - 20.00
+					</div>
+				</div>
+				</div>
+				<div class="text-black text-[20px] font-[600] mt-[20px]">
+					John Smith
+				</div>
+				
+			</div>
+			<div class="llg:w-[calc(33.333%_-_20px)] md:w-[calc(50%_-_15px)] w-full text-center shadow-2xl p-[20px] border-[#09c0f6] border-solid border-[2px] rounded-[20px]">
+				<div class="text-[#2d2567] text-[20px] font-[600]">
+					SATURDAY
+				</div>
+				<div class="flex items-center justify-center gap-[20px] mt-[20px] flex-wrap">
+					<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						CARDIO
+					</div>
+					<div>
+					10.00 - 14.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						GYM
+					</div>
+					<div>
+					18.00 - 19.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						CROSSFIT
+					</div>
+					<div>
+					19.00 - 20.00
+					</div>
+				</div>
+				</div>
+				<div class="text-black text-[20px] font-[600] mt-[20px]">
+					John Smith
+				</div>
+				
+			</div>
+			<div class="llg:w-[calc(33.333%_-_20px)] md:w-[calc(50%_-_15px)] w-full text-center shadow-2xl p-[20px] border-[#09c0f6] border-solid border-[2px] rounded-[20px]">
+				<div class="text-[#2d2567] text-[20px] font-[600]">
+					SUNDAY
+				</div>
+				<div class="flex items-center justify-center gap-[20px] mt-[20px] flex-wrap">
+					<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						GYM
+					</div>
+					<div>
+					10.00 - 14.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						BODY
+					</div>
+					<div>
+					18.00 - 19.00
+					</div>
+				</div>
+				<div class="flex flex-col items-center justify-center">
+					<div class="text-[#09c0f6] text-[18px] font-[600]">
+						RUNNING
+					</div>
+					<div>
+					19.00 - 20.00
+					</div>
+				</div>
+				</div>
+				<div class="text-black text-[20px] font-[600] mt-[20px]">
+					John Smith
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| OUR SCHEDULE SECTION END ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| OUR BLOG SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section id="blog section">
+	<div class="container mx-auto md:py-[80px] py-[50px] md:px-[30px] px-0">
+		<div class="flex flex-col items-center justify-center">
+			<div class="md:text-[36px] text-[32px] md:mb-[20px] mb-[16px] relative before:absolute before:border-b-4 before:w-[50%] before:border-[#2d2567] before:bottom-0 before:translate-x-[50%] font-[500] pb-[20px] text-black">Our <span class="text-[#09c0f6] uppercase" > Blog</span></div>
+		</div>
+		<div class="flex flex-wrap md:gap-[30px] gap-[20px] mt-[30px] items-center justify-center">
+			<div class="llg:w-[calc(33.33%_-_20px)] md:w-[calc(50%_-_15px)] w-full">
+				<div class="bg-blog-banner3 bg-center w-full h-[300px] bg-cover">
+					
+				</div>
+				<div class="p-[20px]">
+					<div class="flex text-[#2d2567] items-center my-[10px] gap-[20px] md:text-[16px] text-[14px]">
+					<div>
+						<i class="bi bi-clock"></i> Jun 11,2023
+					</div>
+						<div>
+						<i class="bi bi-chat-dots"></i> 6 Comments
+					</div>
+				
+				</div>
+					<a href="javascript:;" class="text-[18px] font-[500] text-[#09c0f6]">The Greatist Team's Favorite Leggings With Pockets</a>
+			</div>
+			
+		</div>
+			<div class="llg:w-[calc(33.33%_-_20px)] md:w-[calc(50%_-_15px)] w-full">
+				<div class="bg-blog-banner1 bg-center w-full h-[300px] bg-cover">
+					
+				</div>
+				<div class="p-[20px]">
+					<div class="flex text-[#2d2567] items-center my-[10px] gap-[20px] md:text-[16px] text-[14px]">
+					<div>
+						<i class="bi bi-clock"></i> Jun 11,2023
+					</div>
+						<div>
+						<i class="bi bi-chat-dots"></i> 6 Comments
+					</div>
+				
+				</div>
+					<a href="javascript:;" class="text-[18px] font-[500] text-[#09c0f6]">The Greatist Team's Favorite Leggings With Pockets</a>
+			</div>
+			
+		</div>
+			<div class="llg:w-[calc(33.33%_-_20px)] md:w-[calc(50%_-_15px)] w-full">
+				<div class="bg-blog-banner2 bg-center w-full h-[300px] bg-cover">
+					
+				</div>
+				<div class="p-[20px]">
+					<div class="flex text-[#2d2567] items-center my-[10px] gap-[20px] md:text-[16px] text-[14px]">
+					<div>
+						<i class="bi bi-clock"></i> Jun 11,2023
+					</div>
+						<div>
+						<i class="bi bi-chat-dots"></i> 6 Comments
+					</div>
+				
+				</div>
+					<a href="javascript:;" class="text-[18px] font-[500] text-[#09c0f6]">The Greatist Team's Favorite Leggings With Pockets</a>
+			</div>
+			
+		</div>
+		
+	</div>
+	</div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| OUR BLOG SECTION END ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| GET STARTED SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section class="bg-[#2d2567] text-white">
+	<div class="container mx-auto flex justify-between items-center py-[50px] gap-[30px] md:flex-row flex-col  md:px-[30px] px-0">
+		<div> 
+		<div class="md:text-[30px] text-[24px] font-[600] md:text-left text-center">
+		GET STARTED TODAY
+		</div>
+		<p class="mt-3 md:text-[16px] text-[14px]">New student special! $30 unlimited Gym for the first week anh 50% of our member!</p>
+		</div>
+	<a href="javascript:;" title="book" class="text-[17px] whitespace-nowrap border-2 border-solid  transition-all border-[#09c0f6] text-[#09c0f6] font-[500] p-[8px] duration-500 hover:bg-[#09c0f6] uppercase hover:text-white">Book Now</a>
+	</div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| GET STARTED SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| SWIPER SLIDE SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section >
+	<div class="container mx-auto  md:py-[80px] py-[50px] md:px-[30px] px-0">
+		<div class="flex flex-col items-center justify-center">
+			<div class="md:text-[36px] text-[32px] md:mb-[20px] mb-[16px] relative before:absolute before:border-b-4 before:w-[50%] before:border-[#2d2567] before:bottom-0 before:translate-x-[50%] font-[500] pb-[20px] text-black">Our <span class="text-[#09c0f6] uppercase" > testimonials</span></div>
+		</div>
+		
+		<div class="md:w-[60%] w-full overflow-hidden mx-auto md:mt-[30px] mt-[20px]">
+			<div class="slider-ab flex transition-all duration-500 ">
+			<div class="slide-ab relative flex-[0_0_100%] w-full ">
+				<div class="flex items-center justify-center flex-col text-black">
+					<div class="text-[#09c0f6] mb-[20px] text-[20px] flex gap-[10px]">
+				<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+				</div>
+					<p class="text-center ">The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment for hernia. Initially intended for correcting inguinal hernia.</p>
+				
+					<div class="text-center my-[20px]">
+						
+					<div class="text-[20px] font-[600]">Stacy Mc Neelel</div>
+					<div class="text-[14px] text-[#2d2567]">CEP’s Director</div>
+					</div>
+				<div class="bg-coach-banner1 bg-center bg-cover w-[70px] h-[70px] rounded-full ">
+					
+					
+				</div>
+				</div>
+			</div>
+			<div class="slide-ab relative flex-[0_0_100%] w-full ">
+				<div class="flex items-center justify-center flex-col text-black">
+					<div class="text-[#09c0f6] mb-[20px] text-[20px] flex gap-[10px]">
+				<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+				</div>
+					<p class="text-center ">The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment for hernia. Initially intended for correcting inguinal hernia.</p>
+				
+					<div class="text-center my-[20px]">
+					<div class="text-[20px] font-[600]">Stacy Mc Neelel</div>
+					<div class="text-[14px] text-[#2d2567]">CEP’s Director</div>
+				</div>
+				
+					<div class="bg-coach-banner2 bg-center bg-cover w-[70px] h-[70px] rounded-full ">
+					
+				</div>
+				</div>
+			</div>
+			<div class="slide-ab relative flex-[0_0_100%] w-full ">
+				<div class="flex items-center justify-center flex-col text-black">
+					<div class="text-[#09c0f6] mb-[20px] text-[20px] flex gap-[10px]">
+				<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+				</div>
+					<p class="text-center ">The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment for hernia. Initially intended for correcting inguinal hernia.</p>
+				
+					<div class="text-center my-[20px]">
+					<div class="text-[20px] font-[600]">Stacy Mc Neelel</div>
+					<div class="text-[14px] text-[#2d2567]">CEP’s Director</div>
+				</div>
+				
+					<div class="bg-coach-banner3 bg-center bg-cover w-[70px] h-[70px] rounded-full ">
+					
+				</div>
+				</div>
+			</div>
+			<div class="slide-ab relative flex-[0_0_100%] w-full ">
+				<div class="flex items-center justify-center flex-col text-black">
+					<div class="text-[#09c0f6] mb-[20px] text-[20px] flex gap-[10px]">
+				<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+				</div>
+					<p  class="text-center ">The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment for hernia. Initially intended for correcting inguinal hernia.</p>
+				
+					<div class="text-center my-[20px]">
+					<div class="text-[20px] font-[600]">Stacy Mc Neelel</div>
+					<div class="text-[14px] text-[#2d2567]">CEP’s Director</div>
+				</div>
+				
+					<div class="bg-coach-banner1 bg-center bg-cover w-[70px] h-[70px] rounded-full ">
+					
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+	</div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| SWIPER SLIDE SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| CONTACT SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section id="contact section">
+	<div class="container mx-auto  md:py-[80px] py-[50px] md:px-[30px] px-0">
+		<div class="llg:w-[70%] llg:mx-auto w-full">
+			<div class="flex flex-col items-center justify-center">
+				<div class="md:text-[36px] text-[27px] md:mb-[20px] mb-[16px] relative before:absolute before:border-b-4 before:w-[50%] before:border-[#2d2567] before:bottom-0 before:translate-x-[50%] font-[500] pb-[20px] text-black">Our <span class="text-[#09c0f6] uppercase" >CONTACTS</span></div>
+			</div>
+			<div class="flex md:gap-[30px] gap-[20px] mt-[30px] flex-wrap">
+				<div class="md:w-[calc(50%_-_15px)] w-full">
+					<input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-[#2d2567] rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-[#09c0f6]" id="grid-first-name" type="text" placeholder="Name ">
+				</div>
+				<div class="md:w-[calc(50%_-_15px)] w-full">
+					<input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-[#2d2567] rounded py-3 px-4  leading-tight focus:outline-none focus:bg-white focus:border-[#09c0f6]" id="grid-first-name" type="tel" placeholder="Phone Number">
+				</div>
+			</div>
+			<textarea class="resize-none rounded-md bg-gray-200 py-3 px-4 w-[100%] md:mt-[30px] mt-[20px] md:h-[300px] h-[200px] border border-[#2d2567] focus:outline-none  focus:border-[#09c0f6]" placeholder="message"></textarea>
+			<div class="mt-[30px] text-center">
+					<a href="javascript:;" class="md:text-[17px] text-[14px] border-2 border-solid  transition-all border-[#09c0f6] text-[#09c0f6] font-[500] p-[8px] duration-500 hover:bg-[#09c0f6] uppercase hover:text-white">Submit Now</a>
+			</div>
+		</div>
+		
+	</div>
+</section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| CONTACT SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| FOOTER SECTION START ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<footer class="bg-[#2d2567] ">
+	<div class="container mx-auto text-black flex py-[40px] flex-wrap md:gap-[50px] gap-[25px]   md:px-[30px] px-[10px]">
+		 	<div class="lg:w-[calc(25%_-_38px)] md:w-[calc(50%_-_25px)] w-full">
+		 		<a href="javascript:;" class="flex items-center justity-center gap-[10px] mb-[30px]">
+				<span class="text-[30px] font-[600] uppercase text-[#09c0f6]"><span class="text-white">START</span>Fit</span>
+				</a>
+				<p class="text-white">Despite growth of the Internet over the past seven years, the use of toll-free phone numbers in television advertising continues.</p>
+		 	<div class=" flex flex-col  mt-4 text-white">
+				<div class=" mt-4 text-[16px]">
+					FOLLOW
+				</div>
+				<div class="flex gap-[20px] text-[20px]  mt-4">
+					 <a href="#" title="link"><i class="bi bi-facebook"></i></a>
+					 <a href="#" title="link"><i class="bi bi-instagram"></i></a>
+					 <a href="#" title="link"><i class="bi bi-twitter"></i></a>
+				</div>
+			</div>
+		 	</div>
+		 	<div class="lg:w-[calc(25%_-_38px)] md:w-[calc(50%_-_25px)] w-full text-white">
+		 		<div class="text-[20px] font-[500] mb-[30px]">
+		 			OUR BLOG
+		 		</div>
+		 		
+		 		<div class="mt-[20px]">
+		 			<div class="font-[400] text-[15px]">MOST PEOPLE WHO WORK</div>
+		 			<div class="font-[400] text-[14px] text-white"><i class="bi bi-clock font-[600]"></i> JAN 02, 2023</div>
+		 		</div>
+		 			<div class="mt-[20px]">
+		 			<div class="font-[400] text-[15px]">Freelance Design Tricks How</div>
+		 			<div class="font-[400] text-[14px] text-white"><i class="bi bi-clock font-[600]"></i> JAN 02, 2023</div>
+		 		</div>
+		 			<div class="mt-[20px]">
+		 			<div class="font-[400] text-[15px]">have a computer at home have had</div>
+		 			<div class="font-[400] text-[14px] text-white"><i class="bi bi-clock font-[600]"></i> JAN 02, 2023</div>
+		 		</div>
+		 	</div>
+		 	<div class="lg:w-[calc(25%_-_38px)] md:w-[calc(50%_-_25px)] w-full text-white">
+		 		<div class="text-[20px] font-[500] mb-[30px]">
+		 			MENU
+		 		</div>
+		 	
+		 	<div class="flex flex-col gap-[15px] uppercase">
+		 		<a href="javascrit:;" title="menu link">home</a>
+		 		<a href="javascrit:;" title="menu link">about</a>
+		 		<a href="javascrit:;" title="menu link">schedule</a>
+		 		<a href="javascrit:;" title="menu link">portfilo</a>
+		 	</div>
+		 	</div>
+		 	<div class="lg:w-[calc(25%_-_38px)] md:w-[calc(50%_-_25px)] w-full text-white">
+		 		<div class="text-[20px] font-[500] mb-[30px]">
+		 			GET INFO
+		 		</div>
+		 		<div class="flex mb-[20px] gap-[30px]">
+		 		<div>
+		 			<i class="bi bi-telephone-fill"></i>
+		 		</div>
+		 		<div> 
+		 			<div>
+		 				Phone:
+		 			</div>
+		 			<a href="tel:91185415454" title="link" class="text-white">
+		 				+91185415454
+		 			</a>
+		 		</div>
+		 	</div>
+		 		<div class="flex mb-[20px] gap-[30px]">
+		 		<div>
+		 			<i class="bi bi-envelope-fill"></i>
+		 		</div>
+		 		<div>
+		 			<div>
+		 				Email:
+		 			</div>
+		 				<a href="mailto:91185415454" title="link" class="text-white">
+		 				template@gmail.com
+		 			</a>
+		 		</div>
+		 	</div>
+		 		<div class="flex mb-[20px] gap-[30px]">
+		 		<div>
+		 			<i class="bi bi-geo-alt-fill"></i>
+		 		</div>
+		 		<div>
+		 			<div>
+		 				Address:
+		 			</div>
+		 			<div class="text-white">
+		 				Ramanthapuram, Tamil Nadu
+		 			</div>
+		 		</div>
+		 	</div>
+		 
+		 	</div>
+		 	
+	</div> 	
+		 <div class="text-white ">
+        <div class="flex flex-col items-center py-4 font-[600] text-[14px]">
+            Copyright ©2023 All rights reserved
+            <span> Design by
+                <a  href="#javascript" target="blank" title="aboss" class="text-[#09c0f6] hover:text-white duration-500">NIJam</a>
+            </span>
+        </div>
+    </div>
+</footer>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|| FOOTER SECTION END ||~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<script>
+	var nav = document.querySelector("header");
+    window.addEventListener("scroll", function (event) {
+    	if (window.innerWidth < 768) {
+	        if (this.window.scrollY >= 100) {
+	        	nav.style.padding="10px 0px"
+	        	nav.style.top="0px"
+	            nav.style.transition = 'all';
+	            nav.style.transitionDuration = '0.7s';
+	            nav.style.transformStyle = 'ease-in';
+	            nav.style.backgroundColor = '#2d2567';
+	            nav.style.boxShadow = '0px 10px 10px -17px #111';
+	
+	        }
+	        else {
+	        	nav.style.padding="20px 0px"
+	        	nav.style.top=""
+	            nav.style.transition = 'all';
+	            nav.style.transitionDuration = '0.7s';
+	            nav.style.transformStyle = 'ease-in';
+	            nav.style.backgroundColor = 'transparent';
+	            nav.style.boxShadow = 'none';
+	
+	        };
+    	}else
+    	{
+    		if (this.window.scrollY >= 100) {
+	        	nav.style.padding="20px 0px"
+	        	nav.style.top="0px"
+	            nav.style.transition = 'all';
+	            nav.style.transitionDuration = '0.7s';
+	            nav.style.transformStyle = 'ease-in';
+	            nav.style.backgroundColor = '#2d2567';
+	            nav.style.boxShadow = '0px 10px 10px -17px #111';
+	
+	        }
+	        else {
+	        	nav.style.padding="20px 0px"
+	        	nav.style.top=""
+	            nav.style.transition = 'all';
+	            nav.style.transitionDuration = '0.7s';
+	            nav.style.transformStyle = 'ease-in';
+	            nav.style.backgroundColor = 'transparent';
+	            nav.style.boxShadow = 'none';
+	
+	        };
+    	}
+    	
+    });
+    
+ 	const menu = document.querySelector("#menuicon");
+    const menuSec = document.querySelector("#section");
+    const body =document.querySelector(".body");
+    menu.addEventListener('click', () => {
+        menuSec.classList.toggle('right');
+        if (menuSec.classList.contains('right')) {
+            menu.classList.remove('bi-list');
+            menu.classList.add('bi-x');
+            menuSec.classList.add('right-[0%]');
+           body.classList.add('overflow-hidden');
+        } else {
+            menu.classList.remove('bi-x');
+            menu.classList.add('bi-list');
+            menuSec.classList.remove('right-[0%]');
+             body.classList.remove('overflow-hidden');
+        }
+    })
+    
+     const menuSeca = document.querySelectorAll("#section a");
+     
+     menuSeca.forEach((menu)=>{
+     	menu.addEventListener('click',(e)=>{
+     		menuSec.classList.toggle('right');
+     		 menuSec.classList.remove('right-[0%]');
+     	let  men = document.querySelector("#menuicon");
+    		men.classList.remove('bi-x');
+     		 men.classList.add('bi-list');
+    			
+     	});
+     });
+    
+</script>
+
+<script>
+	const testSlider=document.querySelector('.slider-ab');
+const testSlide=document.querySelectorAll('.slide-ab');
+let slideIndextext = 0;
+const intervalTimer = 5000;
+let autoSlideIntervalr;
+  function sliderTo(index) {
+        const slideWidth = testSlide[0].clientWidth;
+        testSlider.style.transform = `translateX(-${slideWidth * index}px)`;
+        console.log(slideIndextext);
+    }
+    
+     function autoSlide() {
+        slideIndextext = (slideIndextext + 1) % testSlide.length;
+        sliderTo(slideIndextext);
+         
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideIntervalr);
+        autoSlideIntervalr = setInterval(autoSlide, intervalTimer);
+       
+    }
+
+    resetAutoSlide();
+    
+   
+
+</script>
+
+<script>
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    let slideIndex = 0;
+    const intervalTime = 6000;
+    let autoSlideInterval;
+
+    function slideTo(index) {
+        const slideWidth = slides[0].clientWidth;
+        slider.style.transform = `translateX(-${slideWidth * index}px)`;
+    }
+
+
+    function handleIndicatorClick(event) {
+        const clickedIndex = parseInt(event.target.getAttribute('data-index'));
+        if (!isNaN(clickedIndex)) {
+            slideIndex = clickedIndex;
+            slideTo(slideIndex);
+            resetAutoSlide();
+        }
+    }
+
+    function autoSlide() {
+        slideIndex = (slideIndex + 1) % slides.length;
+        slideTo(slideIndex);
+       
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(autoSlide, intervalTime);
+    }
+
+    resetAutoSlide();
+
+    prevButton.addEventListener('click', () => {
+        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        slideTo(slideIndex);
+        resetAutoSlide();
+    });
+
+    nextButton.addEventListener('click', () => {
+        slideIndex = (slideIndex + 1) % slides.length;
+       slideTo(slideIndex);
+        resetAutoSlide();
+    });
+
+</script>
